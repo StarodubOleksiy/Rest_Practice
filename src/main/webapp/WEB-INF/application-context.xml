@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"
+        default-autowire="byName">
+
+
+       <bean id="employeeService" class="springMVC.service.EmployeeService"/>
+       <bean id="employeeDao" class="springMVC.hibernate.HEmployeeDao"/>
+       <bean id="menuService" class="springMVC.service.MenuService"/>
+       <bean id="menuDao" class="springMVC.hibernate.HMenuDao"/>
+       <bean id="orderService" class="springMVC.service.OrderService"/>
+       <bean id="orderDao" class="springMVC.hibernate.HOrderDao"/>
+
+
+</beans>
